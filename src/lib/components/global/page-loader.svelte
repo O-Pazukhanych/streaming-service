@@ -1,27 +1,27 @@
 <script lang="ts">
-	import { onDestroy } from 'svelte';
+	import { onDestroy } from 'svelte'
 
-	export let loader: boolean = true;
+	export let loader: boolean = true
 
-	let showLoader: boolean;
-	let loaderTimeout: ReturnType<typeof setTimeout>;
+	let showLoader: boolean
+	let loaderTimeout: ReturnType<typeof setTimeout>
 
 	$: {
-		showLoader = true;
+		showLoader = true
 		if (!loader) {
 			loaderTimeout = setTimeout(() => {
-				showLoader = false;
-			}, 1000);
+				showLoader = false
+			}, 1000)
 		}
 	}
 
 	onDestroy(() => {
-		clearTimeout(loaderTimeout);
+		clearTimeout(loaderTimeout)
 	})
 </script>
 
 {#if showLoader}
-	<div class="join z-[100] flex h-screen w-full fixed top-0 left-0 overflow-x-hidden">
+	<div class="join fixed left-0 top-0 z-[100] flex h-screen w-full overflow-x-hidden">
 		<div
 			class="join-item absolute left-0 z-[110] h-full w-1/2 bg-base-200 transition duration-500"
 			class:-translate-x-full={!loader}

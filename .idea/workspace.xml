@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="913b4a02-0f40-4135-bc9c-de887dc29d4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/components/global/footer/footer.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/global/header/header.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/global/page-loader.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/(app)/+layout.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/(app)/test/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/+error.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/images/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/auth/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/layout.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/(app)/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/(app)/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/global/page-loader.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/global/page-loader.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +58,7 @@
     "git-widget-placeholder": "staging",
     "javascript.nodejs.core.library.configured.version": "20.15.1",
     "javascript.nodejs.core.library.typings.version": "20.14.14",
-    "last_opened_file_path": "/home/oleksandr/svelte/streaming-service/src/routes/(app)",
+    "last_opened_file_path": "/home/oleksandr/svelte/streaming-service/static/assets/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,6 +72,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/assets/images" />
       <recent name="$PROJECT_DIR$/src/routes/(app)" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -118,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1722727355940</updated>
       <workItem from="1722727358635" duration="2122000" />
-      <workItem from="1722770794688" duration="20119000" />
+      <workItem from="1722770794688" duration="26469000" />
     </task>
     <servers />
   </component>
