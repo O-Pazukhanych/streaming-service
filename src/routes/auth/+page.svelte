@@ -1,14 +1,84 @@
 <script lang="ts">
+	import type { PageData } from './$types'
 	import { MapPin } from 'lucide-svelte'
 	import { Google, GitHub } from '$lib/icons/react-icons'
 	import Logo from '$lib/components/global/logo.svelte'
-	import Input from '$lib/components/form/input.svelte'
-	import type { AuthFormVariant } from '$lib/types/auth'
+	import type { AuthData, AuthFormVariant } from '$lib/types/auth'
+	import { toasts } from 'svelte-toasts'
+	import { signIn } from '@auth/sveltekit/client'
+	import { superForm } from 'sveltekit-superforms'
+	import { zodClient } from 'sveltekit-superforms/adapters'
+	import { loginSchema, registerSchema } from '$lib/schemas/auth-schemas'
+	import RegisterForm from '$lib/sections/auth/register-form.svelte'
+	import LoginForm from '$lib/sections/auth/login-form.svelte'
+	import { validateResponse } from '$lib/utils/response-validator'
+	import { goto } from '$app/navigation'
+
+	export let data: PageData
+
+	const {
+		form: loginForm,
+		constraints: loginConstraints,
+		enhance: loginEnhance,
+		errors: loginErrors,
+		delayed: loginDelayed
+	} = superForm(data.loginForm, {
+		validators: zodClient(loginSchema),
+		validationMethod: 'onblur',
+		resetForm: false,
+		onUpdated({ form }) {
+			if (form.message) validateResponse(form.message)
+			if (form.valid) login(form.data)
+		}
+	})
+	const {
+		form: registerForm,
+		constraints: registerConstraints,
+		enhance: registerEnhance,
+		errors: registerErrors,
+		delayed: registerDelayed
+	} = superForm(data.registerForm, {
+		validators: zodClient(registerSchema),
+		validationMethod: 'onblur',
+		resetForm: false,
+		onUpdated({ form }) {
+			if (form.message) validateResponse(form.message)
+			if (form.valid) login(form.data)
+		}
+	})
 
 	let formVariant: AuthFormVariant = 'login'
 	$: isLogin = formVariant === 'login'
 	function toggleFormVariant(): void {
 		formVariant = isLogin ? 'register' : 'login'
+	}
+
+	async function login(data: AuthData): Promise<void> {
+		try {
+			await signIn('credentials', {
+				name: data.name,
+				password: data.password,
+				redirect: false,
+				callbackUrl: '/'
+			})
+			await goto('/')
+		} catch (error) {
+			console.log(error)
+			toasts.error('Server error.', 'We apologize, please try again later.')
+		}
+	}
+	async function loginByProvider(provider: string): Promise<void> {
+		try {
+			await signIn(provider, {
+				redirect: false,
+				callbackUrl: '/'
+			})
+
+			toasts.success('Successful Authorization')
+		} catch (error) {
+			console.log(error)
+			toasts.error(error as string)
+		}
 	}
 </script>
 
@@ -75,6 +145,8 @@
 								title={isLogin
 									? 'Log in with your Google account'
 									: 'Create a new user with Google'}
+								type="button"
+								on:click={() => loginByProvider('google')}
 							>
 								<Google />
 								{isLogin ? 'login by google' : 'sign up with google'}
@@ -84,6 +156,8 @@
 								title={isLogin
 									? 'Log in with your GitHub account'
 									: 'Create a new user with GitHub'}
+								type="button"
+								on:click={() => loginByProvider('github')}
 							>
 								<GitHub />
 								{isLogin ? 'login by git' : 'sign up with git'}
@@ -93,63 +167,25 @@
 					<div class="divider">OR</div>
 					<div class="card">
 						<div class="card w-full">
-							<form class="card-body gap-y-6 p-0">
-								<div class="flex flex-col gap-y-6">
-									<Input
-										type="text"
-										id="name"
-										label="Username"
-										placeholder="Enter your username"
-										required={true}
-									/>
-									{#if !isLogin}
-										<Input
-											type="email"
-											id="email"
-											label="Email"
-											placeholder="Enter your email"
-											required={true}
-										/>
-									{/if}
-									<Input
-										type="password"
-										id="password"
-										label="Password"
-										placeholder="Password"
-										required={true}
-									/>
-								</div>
-								<div>
-									<div class="form-control mb-2">
-										<button
-											class="btn btn-primary text-[1rem] font-medium text-white hover:bg-transparent active:bg-transparent"
-											title={isLogin
-												? 'Log in with your account'
-												: 'Create a new user account'}
-										>
-											{isLogin ? 'Login' : 'Create account'}
-										</button>
-									</div>
-									<p
-										class="text-sm text-base-content"
-										class:text-center={!isLogin}
-									>
-										{isLogin
-											? 'First time using Streaming-Service?'
-											: 'Already have an account?'}
-										<span
-											class="link-hover link text-primary"
-											title={isLogin
-												? 'Go to register form'
-												: 'Go to account login'}
-											on:click={toggleFormVariant}
-											aria-hidden="true"
-										>
-											{isLogin ? 'Sign Up' : 'Login'}
-										</span>
-									</p>
-								</div>
-							</form>
+							{#if isLogin}
+								<LoginForm
+									enhance={loginEnhance}
+									form={loginForm}
+									constraints={loginConstraints}
+									errors={loginErrors}
+									delayed={$loginDelayed}
+									{toggleFormVariant}
+								/>
+							{:else}
+								<RegisterForm
+									enhance={registerEnhance}
+									form={registerForm}
+									constraints={registerConstraints}
+									errors={registerErrors}
+									delayed={$registerDelayed}
+									{toggleFormVariant}
+								/>
+							{/if}
 						</div>
 					</div>
 				</div>

@@ -1,5 +1,6 @@
-// See https://kit.svelte.dev/docs/types#app
-// for information about these interfaces
+import type { PrismaClient } from '@prisma/client'
+import type { Env } from '@sveltejs/kit/src/types/internal'
+
 declare global {
 	namespace App {
 		interface Platform {
@@ -7,6 +8,10 @@ declare global {
 			cf: CfProperties
 			ctx: ExecutionContext
 		}
+	}
+	namespace global {
+		// eslint-disable-next-line no-var
+		export var prismadb: PrismaClient
 	}
 }
 

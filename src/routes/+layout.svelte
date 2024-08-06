@@ -3,12 +3,23 @@
 	import { page } from '$app/stores'
 	import { onDestroy } from 'svelte'
 	import PageLoader from '$lib/components/global/page-loader.svelte'
+	import { FlatToast, ToastContainer } from 'svelte-toasts'
+	import { configStore } from '$lib/stores/config'
 
 	let loader: boolean
 	let loaderTimeout: ReturnType<typeof setTimeout>
 
+	$: if (!$configStore) {
+		configStore.set({
+			currentRoute: $page.url.pathname
+		})
+	}
+
 	$: if ($page.url.pathname) {
-		loader = true
+		if ($page.url.pathname !== $configStore?.currentRoute) {
+			configStore.updateCurrentRoute($page.url.pathname)
+			loader = true
+		}
 		loaderTimeout = setTimeout(() => {
 			loader = false
 		}, 500)
@@ -33,3 +44,9 @@
 <PageLoader {loader} />
 
 <slot />
+
+<div role="presentation" class="modals-root">
+	<ToastContainer placement="bottom-right" let:data>
+		<FlatToast {data} />
+	</ToastContainer>
+</div>
