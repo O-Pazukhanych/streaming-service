@@ -7,10 +7,11 @@ import {
 	AUTH_GITHUB_SECRET,
 	AUTH_GOOGLE_ID,
 	AUTH_GOOGLE_SECRET,
-	AUTH_SECRET
+	AUTH_SECRET,
 } from '$env/static/private'
 import prismadb from '$lib/config/prismadb'
-import { compare } from 'bcrypt'
+import { PrismaAdapter } from '@auth/prisma-adapter';
+import { passwordHashing } from '$lib/utils/password-hashing'
 
 export const { handle } = SvelteKitAuth({
 	providers: [
@@ -42,19 +43,15 @@ export const { handle } = SvelteKitAuth({
 					throw Error('Username does not exist')
 				}
 
-				const isCorrectPassword = await compare(
-					credentials.password.toString(),
-					user.password
-				)
-				if (!isCorrectPassword) {
+				if (!passwordHashing.compare(credentials.password.toString(), user.password)) {
 					throw Error('Incorrect password')
 				}
 
 				return user
 			}
 		}),
-		GitHub({ clientId: AUTH_GITHUB_ID, clientSecret: AUTH_GITHUB_SECRET }),
-		Google({ clientId: AUTH_GOOGLE_ID, clientSecret: AUTH_GOOGLE_SECRET })
+		GitHub({ clientId: AUTH_GITHUB_ID, clientSecret: AUTH_GITHUB_SECRET, allowDangerousEmailAccountLinking: true }),
+		Google({ clientId: AUTH_GOOGLE_ID, clientSecret: AUTH_GOOGLE_SECRET, allowDangerousEmailAccountLinking: true })
 	],
 	callbacks: {
 		// JWT get sent to server?
@@ -70,6 +67,7 @@ export const { handle } = SvelteKitAuth({
 			return session
 		}
 	},
+	adapter: PrismaAdapter(prismadb),
 	trustHost: true,
 	pages: {
 		signIn: '/auth'

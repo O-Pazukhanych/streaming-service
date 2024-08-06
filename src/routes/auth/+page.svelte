@@ -58,10 +58,9 @@
 			await signIn('credentials', {
 				name: data.name,
 				password: data.password,
-				redirect: false,
+				redirect: true,
 				callbackUrl: '/'
 			})
-			await goto('/')
 		} catch (error) {
 			console.log(error)
 			toasts.error('Server error.', 'We apologize, please try again later.')
@@ -70,7 +69,7 @@
 	async function loginByProvider(provider: string): Promise<void> {
 		try {
 			await signIn(provider, {
-				redirect: false,
+				redirect: true,
 				callbackUrl: '/'
 			})
 

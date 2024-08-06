@@ -14,7 +14,6 @@
 			currentRoute: $page.url.pathname
 		})
 	}
-
 	$: if ($page.url.pathname) {
 		if ($page.url.pathname !== $configStore?.currentRoute) {
 			configStore.updateCurrentRoute($page.url.pathname)

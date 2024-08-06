@@ -4,7 +4,7 @@ import { zod } from 'sveltekit-superforms/adapters'
 import { loginSchema, registerSchema } from '$lib/schemas/auth-schemas'
 import { type Actions } from '@sveltejs/kit'
 import prismadb from '$lib/config/prismadb'
-import bcrypt from 'bcrypt'
+import { passwordHashing } from '$lib/utils/password-hashing'
 
 export const load: PageServerLoad = async () => {
 	return {
@@ -36,7 +36,7 @@ export const actions: Actions = {
 			})
 		}
 
-		const hashedPassword = await bcrypt.hash(form.data.password, 12)
+		const hashedPassword = passwordHashing.hash(form.data.password);
 		await prismadb.user.create({
 			data: {
 				email: form.data.email,
@@ -76,7 +76,7 @@ export const actions: Actions = {
 			})
 		}
 
-		if (!bcrypt.compareSync(form.data.password, existingUser.password)) {
+		if (!passwordHashing.compare(form.data.password, existingUser.password)) {
 			setError(form, 'name', 'User does not exist.')
 			setError(form, 'password', 'Check your data.')
 			return message(form, {
