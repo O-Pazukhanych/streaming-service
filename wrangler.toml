@@ -2,6 +2,7 @@
 name = "streaming-service"
 compatibility_date = "2024-07-29"
 pages_build_output_dir = ".svelte-kit/cloudflare"
+compatibility_flags = ["nodejs_compat"]
 
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Pages Function, running it closer to your back-end infrastructure
@@ -15,8 +16,9 @@ pages_build_output_dir = ".svelte-kit/cloudflare"
 # - https://developers.cloudflare.com/pages/functions/bindings/#environment-variables
 # Note: Use secrets to store sensitive data.
 # - https://developers.cloudflare.com/pages/functions/bindings/#secrets
-# [vars]
-# MY_VARIABLE = "production_value"
+ [vars]
+ DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiNWQ4MWJiYTUtNzZkMC00ZDdhLWIxYWUtMGFiM2VlMTBjOWIxIiwidGVuYW50X2lkIjoiMDZmOThhYjk2MTEzNzc5NDc1Y2M1M2Y5YTE1YzBiNjkzZWE5NWQ5YTliNmM3YWYyMWMzNTk1MTgzZTVjNzgwNSIsImludGVybmFsX3NlY3JldCI6ImI1NWM0M2Y2LTVkYzItNGI2NS1iZWVkLWZhMjBmNGNkYjcwNiJ9.uitFekXpullh_TD0tAec5HBU7DjSYMHY1gCeMFkF1ss"
+ DIRECT_DATABASE_URL = "mongodb+srv://admin:qa123123@database.n8bvnib.mongodb.net/v1"
 
 # Bind the Workers AI model catalog. Run machine learning models, powered by serverless GPUs, on Cloudflare’s global network
 # Docs: https://developers.cloudflare.com/pages/functions/bindings/#workers-ai
