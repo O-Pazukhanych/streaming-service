@@ -6,6 +6,7 @@
 	height="120"
 	viewBox="210 0 1 280"
 	xml:space="preserve"
+	style="flex: 1 0 100px"
 >
 	<path
 		fill="none"

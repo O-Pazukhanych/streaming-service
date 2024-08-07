@@ -3,8 +3,6 @@
 	import { signOut } from '@auth/sveltekit/client'
 </script>
 
-<h1>Hello</h1>
-
 {#if $page.data.session}
 	<h2>logged in</h2>
 	<button on:click={() => signOut()} class="btn btn-info">sign out</button>

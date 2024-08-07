@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="913b4a02-0f40-4135-bc9c-de887dc29d4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/password-hashing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/config/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/config/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/config/prismadb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/config/prismadb.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/auth/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auth/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/global/footer/footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/global/footer/footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/global/header/header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/global/header/header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/(app)/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/(app)/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+error.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+error.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/auth/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auth/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrangler.toml" beforeDir="false" afterPath="$PROJECT_DIR$/wrangler.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +176,7 @@
       <workItem from="1722954161383" duration="2985000" />
       <workItem from="1722957791182" duration="2241000" />
       <workItem from="1722960251805" duration="14817000" />
+      <workItem from="1722979622445" duration="11556000" />
     </task>
     <servers />
   </component>
