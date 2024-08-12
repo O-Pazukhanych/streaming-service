@@ -2,15 +2,19 @@
 	import Logo from '$lib/components/global/logo.svelte'
 </script>
 
-<footer class="bg-base-300">
-	<div class="container md:footer p-10 text-base-content max-md:gap-y-0 max-md:flex max-md:flex-wrap max-md:justify-center max-md:pb-0">
-		<aside class="mb-6 md:mb-0 max-md:flex-full max-md:flex max-md:flex-col max-md:items-center">
+<footer class="bg-base-300 shadow-top">
+	<div
+		class="container p-10 text-base-content md:footer max-md:flex max-md:flex-wrap max-md:justify-center max-md:gap-y-0 max-md:pb-0"
+	>
+		<aside
+			class="max-md:flex-full mb-6 max-md:flex max-md:flex-col max-md:items-center md:mb-0"
+		>
 			<Logo _class="-mt-3" />
 			<p class="max-sm:text-center">
 				Providing reliable media entertainment services from 2024
 			</p>
 		</aside>
-		<div class="collapse rounded-none sm:max-md:flex-[33%] max-md:text-center">
+		<div class="collapse rounded-none max-md:text-center sm:max-md:flex-[33%]">
 			<input type="checkbox" class="block md:hidden" />
 			<h6 class="footer-title max-md:collapse-title max-md:m-0 max-md:p-0">Services</h6>
 			<div class="max-md:collapse-content max-md:-mt-4">
@@ -22,7 +26,7 @@
 				</nav>
 			</div>
 		</div>
-		<div class="collapse rounded-none sm:max-md:flex-[33%] max-md:text-center">
+		<div class="collapse rounded-none max-md:text-center sm:max-md:flex-[33%]">
 			<input type="checkbox" class="block md:hidden" />
 			<h6 class="footer-title max-md:collapse-title max-md:m-0 max-md:p-0">Company</h6>
 			<div class="max-md:collapse-content max-md:-mt-4">
@@ -34,7 +38,7 @@
 				</nav>
 			</div>
 		</div>
-		<div class="collapse rounded-none sm:max-md:flex-[33%] max-md:text-center">
+		<div class="collapse rounded-none max-md:text-center sm:max-md:flex-[33%]">
 			<input type="checkbox" class="block md:hidden" />
 			<h6 class="footer-title max-md:collapse-title max-md:m-0 max-md:p-0">Legal</h6>
 			<div class="max-md:collapse-content max-md:-mt-4">

@@ -2,6 +2,15 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+:root {
+	--screen-xs: 425px;
+	--screen-sm: 640px;
+	--screen-md: 768px;
+	--screen-lg: 1024px;
+	--screen-xl: 1440px;
+	--screen-2xl: 1780px;
+}
+
 @layer base {
 	html {
 		font-family: 'Poppins', system-ui, sans-serif;

@@ -1,19 +1,35 @@
 <script lang="ts">
 	import '../app.css'
+	import type { PageData } from './$types'
 	import { page } from '$app/stores'
 	import { onDestroy } from 'svelte'
 	import PageLoader from '$lib/components/global/page-loader.svelte'
 	import { FlatToast, ToastContainer } from 'svelte-toasts'
 	import { configStore } from '$lib/stores/config'
+	import { sessionStore } from '$lib/stores/session'
+	import { browser } from '$app/environment'
+	import { localStorageConfigStore } from '$lib/stores/local-storage-config'
+	import type { ThemeType } from '$lib/types/config'
+
+	export let data: PageData
 
 	let loader: boolean
 	let loaderTimeout: ReturnType<typeof setTimeout>
 
-	$: if (!$configStore) {
-		configStore.set({
-			currentRoute: $page.url.pathname
+	$: if (data.session) sessionStore.set(data.session)
+
+	$: if (browser && !$localStorageConfigStore) {
+		localStorageConfigStore.set({
+			theme: localStorage.getItem('theme') as ThemeType || 'dark',
 		})
 	}
+	$: if (browser && !$configStore) {
+		configStore.set({
+			currentRoute: $page.url.pathname,
+			isDarkMode: localStorage.getItem('theme') === 'dark'
+		})
+	}
+
 	$: if ($page.url.pathname) {
 		if ($page.url.pathname !== $configStore?.currentRoute) {
 			configStore.updateCurrentRoute($page.url.pathname)
@@ -22,6 +38,9 @@
 		loaderTimeout = setTimeout(() => {
 			loader = false
 		}, 500)
+	}
+	$: if (browser && $localStorageConfigStore?.theme) {
+		document.documentElement.setAttribute('data-theme', $localStorageConfigStore?.theme)
 	}
 
 	onDestroy(() => {

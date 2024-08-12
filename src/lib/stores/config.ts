@@ -17,6 +17,12 @@ function createConfigStore() {
 						currentRoute: route
 					}) as ConfigStoreData
 			)
+		},
+		updateDarkMode(isDarkMode: boolean): void {
+			update((config) => ({
+				...config,
+				isDarkMode
+			}) as ConfigStoreData)
 		}
 	}
 }

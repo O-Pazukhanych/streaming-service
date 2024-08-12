@@ -7,10 +7,10 @@ import {
 	AUTH_GITHUB_SECRET,
 	AUTH_GOOGLE_ID,
 	AUTH_GOOGLE_SECRET,
-	AUTH_SECRET,
+	AUTH_SECRET
 } from '$env/static/private'
 import prismadb from '$lib/config/prismadb'
-import { PrismaAdapter } from '@auth/prisma-adapter';
+import { PrismaAdapter } from '@auth/prisma-adapter'
 import { passwordHashing } from '$lib/utils/password-hashing'
 
 export const { handle } = SvelteKitAuth({
@@ -50,8 +50,16 @@ export const { handle } = SvelteKitAuth({
 				return user
 			}
 		}),
-		GitHub({ clientId: AUTH_GITHUB_ID, clientSecret: AUTH_GITHUB_SECRET, allowDangerousEmailAccountLinking: true }),
-		Google({ clientId: AUTH_GOOGLE_ID, clientSecret: AUTH_GOOGLE_SECRET, allowDangerousEmailAccountLinking: true })
+		GitHub({
+			clientId: AUTH_GITHUB_ID,
+			clientSecret: AUTH_GITHUB_SECRET,
+			allowDangerousEmailAccountLinking: true
+		}),
+		Google({
+			clientId: AUTH_GOOGLE_ID,
+			clientSecret: AUTH_GOOGLE_SECRET,
+			allowDangerousEmailAccountLinking: true
+		})
 	],
 	callbacks: {
 		// JWT get sent to server?
