@@ -1,6 +1,9 @@
 <script lang="ts">
+	import 'swiper/css'
+	import 'swiper/css/navigation'
+	import 'swiper/css/lazy'
+	import 'swiper/css/effect-coverflow'
 	import '../app.css'
-	import type { PageData } from './$types'
 	import { page } from '$app/stores'
 	import { onDestroy } from 'svelte'
 	import PageLoader from '$lib/components/global/page-loader.svelte'
@@ -11,7 +14,7 @@
 	import { localStorageConfigStore } from '$lib/stores/local-storage-config'
 	import type { ThemeType } from '$lib/types/config'
 
-	export let data: PageData
+	export let data
 
 	let loader: boolean
 	let loaderTimeout: ReturnType<typeof setTimeout>
@@ -20,7 +23,7 @@
 
 	$: if (browser && !$localStorageConfigStore) {
 		localStorageConfigStore.set({
-			theme: localStorage.getItem('theme') as ThemeType || 'dark',
+			theme: (localStorage.getItem('theme') as ThemeType) || 'dark'
 		})
 	}
 	$: if (browser && !$configStore) {

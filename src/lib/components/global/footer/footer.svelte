@@ -4,7 +4,7 @@
 
 <footer class="bg-base-300 shadow-top">
 	<div
-		class="container p-10 text-base-content md:footer max-md:flex max-md:flex-wrap max-md:justify-center max-md:gap-y-0 max-md:pb-0"
+		class="container py-10 text-base-content md:footer max-md:flex max-md:flex-wrap max-md:justify-center max-md:gap-y-0 max-md:pb-0"
 	>
 		<aside
 			class="max-md:flex-full mb-6 max-md:flex max-md:flex-col max-md:items-center md:mb-0"

@@ -5,35 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="913b4a02-0f40-4135-bc9c-de887dc29d4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/components/global/header/navigation-item.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/global/header/navigation.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/global/header/profile-menu.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/modals/dropdown.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/theme-switcher.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/config/routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/stores/local-storage-config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/stores/session.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/interaction/click-outside.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/transition/fade-slide.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/global/buttons/button-main.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/movie/movie-card.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/movie/movie-list.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/posters/main-slider-poster.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/sliders/main-slider.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/sections/home/cartoons-section.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/sections/home/series-section.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/types/movie.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/types/pages/home.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/(app)/+page.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/api/movie/+server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/api/movie/billboard/main/+server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/sections/cartoons-background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/images/sections/series-background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/data/movies.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks.server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/global/footer/footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/global/footer/footer.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/global/header/header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/global/header/header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/global/header/navigation-item.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/global/header/navigation-item.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/global/header/navigation.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/global/header/navigation.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/global/header/profile-menu.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/global/header/profile-menu.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/global/logo.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/global/logo.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/config/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/config/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/config/prismadb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/config/prismadb.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/global/page-loader.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/global/page-loader.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/modals/dropdown.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/modals/dropdown.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/theme-switcher.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/theme-switcher.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/stores/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/stores/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/stores/local-storage-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/stores/local-storage-config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/types/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/types/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/password-hashing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/password-hashing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/(app)/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/(app)/+layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/(app)/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/(app)/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/(app)/test/+page.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+error.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+error.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/auth/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auth/+page.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/auth/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auth/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,16 +60,24 @@
         <option value="logo" />
         <option value="input" />
         <option value="+layout.server" />
-        <option value="+server" />
         <option value="register-form" />
         <option value="login-form" />
         <option value="navigation" />
         <option value="navigation-item" />
         <option value="profile-menu" />
         <option value="dropdown" />
-        <option value="TypeScript File" />
         <option value="theme-switcher" />
+        <option value="main-slider" />
+        <option value="main-slider-poster" />
+        <option value="button-main" />
+        <option value="TypeScript File" />
+        <option value="tsconfig.json" />
+        <option value="movie-list" />
+        <option value="movie-card" />
         <option value="+page.server" />
+        <option value="+server" />
+        <option value="cartoons" />
+        <option value="series-section" />
       </list>
     </option>
   </component>
@@ -116,11 +133,11 @@
       <recent name="$PROJECT_DIR$/src/routes/(app)" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/assets/images/sections" />
+      <recent name="$PROJECT_DIR$/src/lib/components/movie" />
       <recent name="$PROJECT_DIR$/src/lib/utils/interaction" />
       <recent name="$PROJECT_DIR$/src/lib/sections/auth" />
       <recent name="$PROJECT_DIR$/static/assets/images/default" />
-      <recent name="$PROJECT_DIR$/src/lib/config" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.format">
@@ -177,10 +194,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.format" />
+        <item itemvalue="npm.check" />
         <item itemvalue="npm.db-push" />
         <item itemvalue="npm.db-push-local" />
         <item itemvalue="npm.lint" />
-        <item itemvalue="npm.check" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +225,12 @@
       <workItem from="1722979622445" duration="11556000" />
       <workItem from="1723024391295" duration="50310000" />
       <workItem from="1723152421216" duration="4359000" />
-      <workItem from="1723371911566" duration="4256000" />
+      <workItem from="1723371911566" duration="5655000" />
+      <workItem from="1723449733985" duration="18566000" />
+      <workItem from="1723474678711" duration="17853000" />
+      <workItem from="1723534684122" duration="603000" />
+      <workItem from="1723539162412" duration="17588000" />
+      <workItem from="1723561883396" duration="32899000" />
     </task>
     <servers />
   </component>

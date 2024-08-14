@@ -17,21 +17,19 @@ function createLocalStorageConfig() {
 	return {
 		subscribe,
 		set(config: LocalStorageConfigData | null): void {
-			set(config);
-			setToLocalStorage(config);
+			set(config)
+			setToLocalStorage(config)
 		},
 		updateTheme(theme: string): void {
-			update(
-				(config: LocalStorageConfigData | null): LocalStorageConfigData => {
-					const updatedConfig = {
-						...config,
-						theme: theme as ThemeType,
-					} as LocalStorageConfigData;
-					configStore.updateDarkMode(theme === 'dark');
-					setToLocalStorage(updatedConfig);
-					return updatedConfig;
-				}
-			);
+			update((config: LocalStorageConfigData | null): LocalStorageConfigData => {
+				const updatedConfig = {
+					...config,
+					theme: theme as ThemeType
+				} as LocalStorageConfigData
+				configStore.updateDarkMode(theme === 'dark')
+				setToLocalStorage(updatedConfig)
+				return updatedConfig
+			})
 		}
 	}
 }

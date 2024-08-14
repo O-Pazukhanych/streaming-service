@@ -19,10 +19,13 @@ function createConfigStore() {
 			)
 		},
 		updateDarkMode(isDarkMode: boolean): void {
-			update((config) => ({
-				...config,
-				isDarkMode
-			}) as ConfigStoreData)
+			update(
+				(config) =>
+					({
+						...config,
+						isDarkMode
+					}) as ConfigStoreData
+			)
 		}
 	}
 }

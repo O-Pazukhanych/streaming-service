@@ -41,3 +41,18 @@ model Account {
 
   @@unique([provider, providerAccountId])
 }
+
+model Movie {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  description String
+  video_url   String
+  poster_url  String
+  genre       String[]
+  duration    Int
+  year        Int
+  quality     String
+  preferences Int      @default(0)
+  imbd        Float    @default(0)
+  type        String
+}

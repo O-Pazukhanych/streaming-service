@@ -3,9 +3,9 @@
 	import Footer from '$lib/components/global/footer/footer.svelte'
 </script>
 
-<div class="min-w-screen flex min-h-screen flex-col">
+<div class="min-w-screen flex min-h-screen flex-col overflow-x-hidden">
 	<Header />
-	<main class="flex-auto">
+	<main class="flex-auto pt-[68px]">
 		<slot />
 	</main>
 	<Footer />

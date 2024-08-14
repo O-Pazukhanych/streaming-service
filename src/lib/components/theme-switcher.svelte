@@ -15,14 +15,14 @@
 </script>
 
 <label class="swap swap-rotate mr-2 scale-75">
-
-		<input type="checkbox"
-			   value={themePallet[$localStorageConfigStore?.theme || 'dark'].to}
-			   checked={themePallet[$localStorageConfigStore?.theme || 'dark'].darkMode}
-			   on:change={(event) => {
-				localStorageConfigStore.updateTheme(event.currentTarget.value)
-		   }}
-		/>
+	<input
+		type="checkbox"
+		value={themePallet[$localStorageConfigStore?.theme || 'dark'].to}
+		checked={themePallet[$localStorageConfigStore?.theme || 'dark'].darkMode}
+		on:change={(event) => {
+			localStorageConfigStore.updateTheme(event.currentTarget.value)
+		}}
+	/>
 
 	<!-- sun icon -->
 	<svg
