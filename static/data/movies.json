@@ -1,0 +1,120 @@
+[
+	{
+		"title": "Spider-Man: No Way Home",
+		"description": "The action of the film \"Spider-Man: No Way Home\" begins its development at the moment when Mysterio manages to find out the true identity of Spider-Man. From this moment on, Peter Parker's life becomes unbearable. If earlier he could successfully switch between his roles, now it is impossible to do so. Not only Spider-Man's life is turned upside down, but also his reputation.\nRealizing that it is impossible to live like this, the main character of the film \"Spider-Man: No Way Home\" decides to seek help from his old friend Stephen Strange. Peter Parker hopes that with the help of magic he will be able to restore his anonymity. Strange agrees to help.\nDuring the spell, Peter acts carelessly, which leads to the creation of a breach in our world. Immediately after this, the Multiverse opens. And soon all the famous villains from other realities get into our world from it. This event starts a cycle of irreversible consequences.",
+		"video_url": "https://cdnst33.tokyvideo.com/videos/356/356052/mp4/9b3d26dbbc9547b98977705c4f31a6c1a0c40828356596acf7e021081d8d5739.mp4?secure=gMkK8qj4FhVKtFnkfQuD8Q%3D%3D%2C1723588661",
+		"poster_url": "https://m.media-amazon.com/images/M/MV5BZjI5NmFmOWUtZWY0ZS00NTc5LWE0YjgtMjk3YmNiM2EwM2U4XkEyXkFqcGdeQXVyMTA1NjE5MTAz._V1_FMjpg_UY2100_.jpg",
+		"genre": ["Action", "Adventure", "Fantasy", "Sci-Fi"],
+		"duration": { "$numberInt": "148" },
+		"year": { "$numberInt": "2021" },
+		"quality": "4K",
+		"preferences": { "$numberInt": "0" },
+		"imbd": { "$numberDouble": "8.2" },
+		"type": "movie"
+	},
+	{
+		"title": "Hotel Transylvania",
+		"description": "The story of Count Dracula, the owner of the Hotel Transylvania, where demons from all over the world come to relax away from civilization. Dracula invites the most famous monsters? Frankenstein, the Werewolf Family, the Mummy, the Invisible Man to celebrate the 118th anniversary of his daughter Mavis. By chance, 21-year-old traveler Jonathan ends up at the hotel, the girl begins to have warm feelings for him. Dracula tries in every possible way to throw him out, since his person is too much attention from the locals. Having analyzed the situation, he comes to the conclusion that for monsters like him it is necessary to build a more secluded place.",
+		"video_url": "https://nl202.cdnsqu.com/s/FHftUZBtJHeY047BSAZ0I-O0FBQUFBQUFBQUFBUmNlTTJBUG9BOWVJQU9URT0.Utmkfranbk-mzF3Z1gz4HYzrwMcKpJLJDui-vw/hd_30_nl107/Hotel.Transylvania.2012.BDRip.1080p.ENG_480.mp4",
+		"poster_url": "https://m.media-amazon.com/images/M/MV5BMTM3NjQyODI3M15BMl5BanBnXkFtZTcwMDM4NjM0OA@@._V1_FMjpg_UX691_.jpg",
+		"genre": ["Animation", "Adventure", "Comedy", "Family", "Fantasy", "Horror"],
+		"type": "cartoon",
+		"duration": {
+			"$numberInt": "91"
+		},
+		"year": {
+			"$numberInt": "2012"
+		},
+		"quality": "480p",
+		"preferences": {
+			"$numberInt": "0"
+		},
+		"imbd": {
+			"$numberDouble": "7.0"
+		}
+	},
+	{
+		"title": "In Time",
+		"description": "Andrew Niccol's dramatic thriller with Justin Timberlake (Will Salas) \"In Time\" takes us to a fantastic (but not at all incredible: the world of the film is carefully thought out) future, when time will become the main value of people. If people learn to accumulate the time that they used to squander, it would seem that good days should come? But no, answers Andrew Niccol, because this time will have to be stored in special banking systems, and when it comes to banking systems, it becomes clear that social inequality will grow: someone will die in \"time ghettos\", someone will accumulate such reserves of time that they will be able to live almost forever!\n\nSo - on the brink of death every day, since each day is spent on earning time to live for tomorrow, and the main character of the film \"In Time\" Will lives with his mother Rachel (Olivia Wilde). In this cruel world, both the Watchmen robbers and the all-seeing Time Guardian services thrive: the poor should not live longer than the elite! But as a result of a clash with the Watchmen gang, Will gets a royal gift: more than a hundred years of life, which he can share with his mother and friends. Will himself decides to penetrate the area of \u200B\u200Bthe city where millionaires calculate their lifespan in thousands of years.\n\nWatch the science fiction thriller Time: try to live a little more than an hour and a half in the universe of this film! But do not forget that the time spent watching in that universe could be exchanged for additional minutes of life.",
+		"video_url": "https://nl202.cdnsqu.com/s/FHL8mgufcpv7k0yZjHuP-5NEFBQUFBQUFBQUFBUmNmTmdCZm9BOWVJQU9URT0.3xeH11_cIZgon4Tvwrrz7JdqwhLCg8dHX_i-4A/hd_30_nl107/In.Time.2011.BDRip.1080p.Eng_480.mp4",
+		"poster_url": "https://m.media-amazon.com/images/M/MV5BMTUyNDAxMjY0OF5BMl5BanBnXkFtZTgwNTM2NDAwMjI@._V1_FMjpg_UX1012_.jpg",
+		"genre": ["Action", "Sci-Fi", "Thriller"],
+		"type": "movie",
+		"duration": {
+			"$numberInt": "109"
+		},
+		"year": {
+			"$numberInt": "2011"
+		},
+		"quality": "480p",
+		"preferences": {
+			"$numberInt": "0"
+		},
+		"imbd": {
+			"$numberDouble": "6.7"
+		}
+	},
+	{
+		"title": "Suicide Squad",
+		"description": "Ordinary people have absolutely no idea what is going on at the top of our government. We also have no idea what decisions they have to make every day. But it is ordinary people who become unwitting participants in operations. Unwitting witnesses to what is happening. Amanda Waller is the most important person in a secret government agency. She is the one responsible for the most reckless decisions and operations. This woman needs to find a way out of the situation, and she will definitely do it. She will achieve her goal by any means necessary. Need to save the world? No problem. She already knows who will do it. However, there is a huge risk that her new \"team\" may be quite uncontrollable. But there is no other choice. We need to take advantage of this chance and these \"people\". Only their participation can give a chance for salvation. But did the government imagine what madness would begin to happen when this special team takes up the matter?\nWaller forms a squad of the most notorious villains, who also have some abilities. The top brass of the secret agency expects that the bad guys' negative energy can be channeled into the right direction. They are the ones who will have to carry out a secret government assignment. The team will include Captain Boomerang, Batman's personal enemy Harley Quinn, as well as the mighty Deadshot, Bronze Tiger. These supervillains served their time in prison. They had no hope of going out into the world. But then Amanda appears and makes them a tempting offer. They simply cannot refuse such an offer due to their nature. The work that the special squad will have to take on can be called hopeless. There is almost no chance that any of them will survive after completing the task. However, in return, they receive a reduction in their long prison term, or even avoidance of the death sentence. The squad's name is not without reason. Most likely, they will meet their death on this mission.",
+		"video_url": "https://nl201.cdnsqu.com/s/FH2E84mZAyRQSBW9Gm_GJYeEFBQUFBQUFBQUFBUmNmUFFndm9BOWVJQU9URT0.GKfLSMMcN0Uw2dwYDGBuwueERDnPJjfmDpB9ZA/hd_01/Suicide.Squad.2016.BDRip.1080p.eng_480.mp4",
+		"poster_url": "https://m.media-amazon.com/images/M/MV5BYzdhNmU3ZTYtZmRlOC00YmI2LWIzZmYtOWRmYTNjYmZiNDJiXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1024_.jpg",
+		"genre": ["Action", "Adventure", "Fantasy", "Sci-Fi"],
+		"type": "movie",
+		"duration": {
+			"$numberInt": "123"
+		},
+		"year": {
+			"$numberInt": "2016"
+		},
+		"quality": "480p",
+		"preferences": {
+			"$numberInt": "0"
+		},
+		"imbd": {
+			"$numberDouble": "5.9"
+		}
+	},
+	{
+		"title": "Fantastic Beasts and Where to Find Them",
+		"description": "Where do you think a modest English employee of the \"Ministry of Magic\" can expect to find more \"muggles\", magical animals and adventures: in the forests of Equatorial Guinea, or on the streets of New York at the beginning of the last century? Newt \"Fido\" Scamander (Eddie Redmayen), after graduating from the same college where, decades later, Harry will study, a modest employee of the magical direction, managed to rejoice at an exotic business trip to the equatorial belt of the Earth, when suddenly something happened to him in New York ...\n\nWhat exactly? - watch online the next film by Yates (especially famous for the gloom of \"Deathly Hallows\"), the film \"Fantastic Beasts and Where to Find Them\". In this film, describing the magical world of Earth long before Potter, the director gave a minimum of gloom, together with Rowling, who wrote the script, he transfers viewers to a very kind, funny world. The exceptionally high-quality computer graphics will make any movie fan cast aside any doubts that \"fantastic beasts\" actually exist!\n\nIn \"Fantastic Beasts and Where to Find Them\" there is no epic magic of human wizards, but the amazing fairy-tale animals conquer with their naturalness. Watch on the website \"Fantastic Beasts and Where to Find Them\" and comment!",
+		"video_url": "https://nl201.cdnsqu.com/s/FHrxyYgN3WhGdmBsaop9_3YEFBQUFBQUFBQUFBUmNRUkJRZm9BOWVJQU9URT0.9DhIgBcuEX7VQzOXNdrseSGr0IZm9XOSUpaVTg/hd_01/Fantastic.Beasts.and.Where.to.Find.Them.2016.BDRip.720.eng_480.mp4",
+		"poster_url": "https://m.media-amazon.com/images/M/MV5BMjMxOTM1OTI4MV5BMl5BanBnXkFtZTgwODE5OTYxMDI@._V1_FMjpg_UX1012_.jpg",
+		"genre": ["Adventure", "Family", "Fantasy"],
+		"type": "movie",
+		"duration": {
+			"$numberInt": "132"
+		},
+		"year": {
+			"$numberInt": "2016"
+		},
+		"quality": "480p",
+		"preferences": {
+			"$numberInt": "0"
+		},
+		"imbd": {
+			"$numberDouble": "7.2"
+		}
+	},
+	{
+		"title": "Project X",
+		"description": "At the very beginning of the movie \"Project X: Dorvali\" the viewer meets two high school students planning to throw a party for their friend. They are lucky, because Thomas's parents left for the weekend, leaving him alone in the house, leaving only the punishment not to bring anyone home and certainly not to have any get-togethers. In addition, they forbade him to even go near his father's Mercedes. Thomas, being an obedient child of his parents, did not want to hold a party in his house, realizing that any careless move could lead to his family easily finding out about what happened.\n\nHowever, the friends, who pay little attention to the wishes of Tom and his parents, continue to adhere to the original plan. Having told everyone at school about the party, they gather a whole crowd of people wanting to have a good time.\n\nContinuing to watch, the viewer of \"Project X: Dorvali\" understands that the situation will soon get out of control. And that is exactly what happens. The crowd of teenagers becomes uncontrollable. It gets to the point where even the police are unable to influence the crowd, which throws bottles at them. Then the law enforcement officers have to call for reinforcements. And at this time, journalists appear, broadcasting what is happening live.",
+		"video_url": "https://nl202.cdnsqu.com/s/FHx7yTbRwLbUo_-3QZJlS910FBQUFBQUFBQUFBUmNRUnhRZm9BOWVJQU9URT0.MfkvwUDLsM2lx-0_fxw7E19bsEhtfKAGCrkgTQ/hd_30_nl107/Project.X.2012.BDRip.720p.Eng_480.mp4",
+		"poster_url": "https://m.media-amazon.com/images/M/MV5BMTc1MTk0Njg4OF5BMl5BanBnXkFtZTcwODc0ODkyNw@@._V1_FMjpg_UX800_.jpg",
+		"genre": ["Comedy"],
+		"type": "movie",
+		"duration": {
+			"$numberInt": "88"
+		},
+		"year": {
+			"$numberInt": "2012"
+		},
+		"quality": "480p",
+		"preferences": {
+			"$numberInt": "0"
+		},
+		"imbd": {
+			"$numberDouble": "6.7"
+		}
+	}
+]

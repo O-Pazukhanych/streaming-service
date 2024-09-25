@@ -41,3 +41,32 @@ model Account {
 
   @@unique([provider, providerAccountId])
 }
+
+model Movie {
+  id          String       @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  description String
+  video_url   String
+  poster_url  String
+  genre       String[]
+  duration    Int
+  year        Int
+  quality     String
+  preferences Int          @default(0)
+  imdb        Float        @default(0)
+  type        String
+  created_at  DateTime     @default(now())
+  updated_at  DateTime     @updatedAt
+  movieReview MovieReview?
+}
+
+model MovieReview {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  liked      Int      @default(0)
+  unliked    Int      @default(0)
+
+  movieId String @unique @db.ObjectId
+  movie   Movie  @relation(fields: [movieId], references: [id], onDelete: Cascade)
+}

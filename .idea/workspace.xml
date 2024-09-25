@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="913b4a02-0f40-4135-bc9c-de887dc29d4d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lib/components/global/footer/footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/global/footer/footer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/global/header/header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/global/header/header.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/api/movie/cartoon/list/+server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/api/movie/list/+server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/api/movie/serials/list/+server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/global/buttons/button-main.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/global/buttons/button-main.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/movie/movie-card.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/movie/movie-card.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/movie/movie-list.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/movie/movie-list.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/posters/main-slider-poster.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/posters/main-slider-poster.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/config/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/config/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/sections/home/cartoons-section.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/sections/home/cartoons-section.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/sections/home/series-section.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/sections/home/serials-section.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/types/movie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/types/movie.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/types/pages/home.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/types/pages/home.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/(app)/+page.server.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/(app)/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/(app)/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+error.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+error.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/auth/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auth/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/movie/+server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/movie/+server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/movie/billboard/main/+server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/movie/billboard/main/+server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/data/movies.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/movies.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +41,24 @@
         <option value="logo" />
         <option value="input" />
         <option value="+layout.server" />
-        <option value="+page.server" />
-        <option value="TypeScript File" />
-        <option value="+server" />
         <option value="register-form" />
         <option value="login-form" />
+        <option value="navigation" />
+        <option value="navigation-item" />
+        <option value="profile-menu" />
+        <option value="dropdown" />
+        <option value="theme-switcher" />
+        <option value="main-slider" />
+        <option value="main-slider-poster" />
+        <option value="button-main" />
+        <option value="TypeScript File" />
+        <option value="tsconfig.json" />
+        <option value="movie-list" />
+        <option value="movie-card" />
+        <option value="+page.server" />
+        <option value="cartoons" />
+        <option value="series-section" />
+        <option value="+server" />
       </list>
     </option>
   </component>
@@ -55,46 +82,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;staging&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.15.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.14.14&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/oleksandr/svelte/streaming-service/src/lib/icons&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.check.executor&quot;: &quot;Run&quot;,
-    &quot;npm.db-push-local.executor&quot;: &quot;Run&quot;,
-    &quot;npm.db-push.executor&quot;: &quot;Run&quot;,
-    &quot;npm.format.executor&quot;: &quot;Run&quot;,
-    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
-    &quot;prettier.import.notification.dismissed&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/oleksandr/svelte/streaming-service/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "staging",
+    "javascript.nodejs.core.library.configured.version": "20.15.1",
+    "javascript.nodejs.core.library.typings.version": "20.15.0",
+    "last_opened_file_path": "/home/oleksandr/svelte/streaming-service/src/routes/api/movie/series/list",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.check.executor": "Run",
+    "npm.db-push-local.executor": "Run",
+    "npm.db-push.executor": "Run",
+    "npm.dev.executor": "Run",
+    "npm.format.executor": "Run",
+    "npm.lint.executor": "Run",
+    "prettier.import.notification.dismissed": "true",
+    "prettierjs.PrettierConfiguration.Package": "/home/oleksandr/svelte/streaming-service/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.sourceCode",
+    "ts.external.directory.path": "/home/oleksandr/svelte/streaming-service/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes/api/movie/series/list" />
+      <recent name="$PROJECT_DIR$/src/routes/api/movie/cartoon/list" />
       <recent name="$PROJECT_DIR$/src/lib/icons" />
       <recent name="$PROJECT_DIR$/static/assets" />
       <recent name="$PROJECT_DIR$/static/assets/images" />
-      <recent name="$PROJECT_DIR$/src/routes/(app)" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/assets/images/sections" />
+      <recent name="$PROJECT_DIR$/src/lib/components/movie" />
+      <recent name="$PROJECT_DIR$/src/lib/utils/interaction" />
       <recent name="$PROJECT_DIR$/src/lib/sections/auth" />
       <recent name="$PROJECT_DIR$/static/assets/images/default" />
-      <recent name="$PROJECT_DIR$/src/lib/config" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/routes" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.db-push">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="check" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -125,6 +155,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -135,22 +175,12 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="lint" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.db-push" />
         <item itemvalue="npm.db-push-local" />
         <item itemvalue="npm.format" />
-        <item itemvalue="npm.lint" />
         <item itemvalue="npm.check" />
       </list>
     </recent_temporary>
@@ -158,7 +188,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-WS-242.21829.149" />
       </set>
     </attachedChunks>
   </component>
@@ -177,6 +207,16 @@
       <workItem from="1722957791182" duration="2241000" />
       <workItem from="1722960251805" duration="14817000" />
       <workItem from="1722979622445" duration="11556000" />
+      <workItem from="1723024391295" duration="50310000" />
+      <workItem from="1723152421216" duration="4359000" />
+      <workItem from="1723371911566" duration="5655000" />
+      <workItem from="1723449733985" duration="18566000" />
+      <workItem from="1723474678711" duration="17853000" />
+      <workItem from="1723534684122" duration="603000" />
+      <workItem from="1723539162412" duration="17588000" />
+      <workItem from="1723561883396" duration="46628000" />
+      <workItem from="1726559903060" duration="2635000" />
+      <workItem from="1727161245866" duration="7111000" />
     </task>
     <servers />
   </component>

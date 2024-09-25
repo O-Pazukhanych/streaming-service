@@ -36,7 +36,7 @@ export const actions: Actions = {
 			})
 		}
 
-		const hashedPassword = passwordHashing.hash(form.data.password);
+		const hashedPassword = passwordHashing.hash(form.data.password)
 		await prismadb.user.create({
 			data: {
 				email: form.data.email,

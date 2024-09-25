@@ -129,7 +129,9 @@
 	</div>
 	<div class="join-item h-full w-full md:w-1/2">
 		<div class="hero h-full w-full">
-			<div class="hero-content w-[inherit] max-w-xl flex-col items-start px-8 text-white max-xs:-mt-10">
+			<div
+				class="hero-content w-[inherit] max-w-xl flex-col items-start px-8 text-white max-xs:-mt-10"
+			>
 				<Logo _class="self-center scale-75 -my-6 block md:hidden xs:scale-100 xs:my-0" />
 				<h2
 					class="mb-8 text-5xl font-semibold max-lg:mb-6 max-lg:text-[2.5rem] max-xs:mb-4 max-xs:text-4xl"

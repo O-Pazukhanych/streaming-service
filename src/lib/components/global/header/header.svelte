@@ -1,8 +1,18 @@
-<header class="bg-base-300">
-	<div class="container navbar">
-		<div class="navbar-start">
-			<div class="dropdown">
-				<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+<script lang="ts">
+	import Navigation from '$lib/components/global/header/navigation.svelte'
+	import ProfileMenu from '$lib/components/global/header/profile-menu.svelte'
+	import ThemeSwitcher from '$lib/components/theme-switcher.svelte'
+	import Dropdown from '$lib/components/modals/dropdown.svelte'
+</script>
+
+<header class="fixed z-50 h-[68px] w-full bg-base-300 shadow-xl drop-shadow-xl">
+	<div class="container navbar h-full justify-between px-4 lg:px-8 2xl:px-12">
+		<div class="navbar-start w-auto">
+			<Dropdown
+				_class="absolute sm:left-auto -mt-1.5 sm:right-auto min-w-full sm:min-w-[calc(var(--screen-sm)-1rem)] md:min-w-[calc(var(--screen-md)-1rem)] lg:hidden"
+				mark={false}
+			>
+				<div slot="trigger" role="button" class="btn btn-ghost px-1 lg:hidden">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="h-5 w-5"
@@ -18,39 +28,21 @@
 						/>
 					</svg>
 				</div>
-				<ul
-					class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
+				<Navigation _class="menu px-1 justify-evenly w-full sm:menu-horizontal" />
+			</Dropdown>
+			<a href="/" class="btn btn-ghost px-0 text-xl">
+				<span class="max-xs:hidden">Streaming-Service</span>
+				<span class="hidden text-left max-xs:block" style="line-height: 1"
+					>Streaming<br /> Service</span
 				>
-					<li><a href="/test">Item 1</a></li>
-					<li>
-						<a href="/">Parent</a>
-						<ul class="p-2">
-							<li><a href="/">Submenu 1</a></li>
-							<li><a href="/">Submenu 2</a></li>
-						</ul>
-					</li>
-					<li><a href="/">Item 3</a></li>
-				</ul>
-			</div>
-			<a href="/" class="btn btn-ghost text-xl">Streaming-Service</a>
+			</a>
 		</div>
 		<div class="navbar-center hidden lg:flex">
-			<ul class="menu menu-horizontal px-1">
-				<li><a href="/test">Item 1</a></li>
-				<li>
-					<details>
-						<summary>Parent</summary>
-						<ul class="p-2">
-							<li><a href="/">Submenu 1</a></li>
-							<li><a href="/">Submenu 2</a></li>
-						</ul>
-					</details>
-				</li>
-				<li><a href="/">Item 3</a></li>
-			</ul>
+			<Navigation _class="menu-horizontal px-1" />
 		</div>
-		<div class="navbar-end">
-			<a href="/404" class="btn">Button</a>
+		<div class="navbar-end w-auto">
+			<ThemeSwitcher />
+			<ProfileMenu />
 		</div>
 	</div>
 </header>

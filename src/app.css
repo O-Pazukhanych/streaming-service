@@ -2,9 +2,29 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+:root {
+	--screen-xs: 425px;
+	--screen-sm: 640px;
+	--screen-md: 768px;
+	--screen-lg: 1024px;
+	--screen-xl: 1440px;
+	--screen-2xl: 1780px;
+}
+
+.swiper {
+	max-height: inherit;
+}
+.swiper-wrapper {
+	max-height: inherit;
+}
+.swiper-slide {
+	height: auto;
+}
+
 @layer base {
 	html {
 		font-family: 'Poppins', system-ui, sans-serif;
+		scrollbar-width: none;
 	}
 }
 
@@ -44,6 +64,85 @@
 			border-top-color: theme('colors.white');
 			-webkit-animation: spin 1.5s linear infinite;
 			animation: spin 1.5s linear infinite;
+		}
+	}
+}
+
+.main-slider {
+	.swiper {
+		overflow: visible;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		@apply scale-[300%] text-primary transition duration-300;
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+	.swiper-button-prev {
+		@apply -translate-x-[250%];
+	}
+	.swiper-button-next {
+		@apply translate-x-[250%];
+	}
+	.swiper-slide {
+		filter: brightness(60%) !important;
+		@apply pointer-events-none shadow-2xl drop-shadow-2xl xs:overflow-hidden xs:rounded-2xl;
+	}
+
+	.swiper:hover {
+		.swiper-button-prev,
+		.swiper-button-next {
+			@apply scale-150 text-primary;
+			@apply translate-x-[0];
+		}
+		.swiper-button-prev {
+			@apply translate-x-1/2;
+		}
+		.swiper-button-next {
+			@apply -translate-x-1/2;
+		}
+	}
+
+	@media (min-width: 767px) {
+		.swiper-slide-next {
+			filter: brightness(100%) !important;
+			@apply pointer-events-auto;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.swiper-slide-active {
+			filter: brightness(100%) !important;
+			@apply pointer-events-auto;
+		}
+	}
+}
+.movie-list {
+	.swiper {
+		@apply 2xs:-mx-2 2xs:px-2;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		@apply -translate-y-1/2 scale-[200%] text-primary transition duration-300;
+	}
+	.swiper-button-prev {
+		@apply -translate-x-[200%];
+	}
+	.swiper-button-next {
+		@apply translate-x-[200%];
+	}
+
+	.swiper:hover {
+		.swiper-button-prev,
+		.swiper-button-next {
+			@apply scale-125;
+		}
+		.swiper-button-prev {
+			@apply translate-x-1/2;
+		}
+		.swiper-button-next {
+			@apply -translate-x-1/2;
 		}
 	}
 }
