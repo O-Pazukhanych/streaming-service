@@ -1,5 +1,18 @@
 [
 	{
+		"title": "Spider-Man: No Way Home",
+		"description": "The action of the film \"Spider-Man: No Way Home\" begins its development at the moment when Mysterio manages to find out the true identity of Spider-Man. From this moment on, Peter Parker's life becomes unbearable. If earlier he could successfully switch between his roles, now it is impossible to do so. Not only Spider-Man's life is turned upside down, but also his reputation.\nRealizing that it is impossible to live like this, the main character of the film \"Spider-Man: No Way Home\" decides to seek help from his old friend Stephen Strange. Peter Parker hopes that with the help of magic he will be able to restore his anonymity. Strange agrees to help.\nDuring the spell, Peter acts carelessly, which leads to the creation of a breach in our world. Immediately after this, the Multiverse opens. And soon all the famous villains from other realities get into our world from it. This event starts a cycle of irreversible consequences.",
+		"video_url": "https://cdnst33.tokyvideo.com/videos/356/356052/mp4/9b3d26dbbc9547b98977705c4f31a6c1a0c40828356596acf7e021081d8d5739.mp4?secure=gMkK8qj4FhVKtFnkfQuD8Q%3D%3D%2C1723588661",
+		"poster_url": "https://m.media-amazon.com/images/M/MV5BZjI5NmFmOWUtZWY0ZS00NTc5LWE0YjgtMjk3YmNiM2EwM2U4XkEyXkFqcGdeQXVyMTA1NjE5MTAz._V1_FMjpg_UY2100_.jpg",
+		"genre": ["Action", "Adventure", "Fantasy", "Sci-Fi"],
+		"duration": { "$numberInt": "148" },
+		"year": { "$numberInt": "2021" },
+		"quality": "4K",
+		"preferences": { "$numberInt": "0" },
+		"imbd": { "$numberDouble": "8.2" },
+		"type": "movie"
+	},
+	{
 		"title": "Hotel Transylvania",
 		"description": "The story of Count Dracula, the owner of the Hotel Transylvania, where demons from all over the world come to relax away from civilization. Dracula invites the most famous monsters? Frankenstein, the Werewolf Family, the Mummy, the Invisible Man to celebrate the 118th anniversary of his daughter Mavis. By chance, 21-year-old traveler Jonathan ends up at the hotel, the girl begins to have warm feelings for him. Dracula tries in every possible way to throw him out, since his person is too much attention from the locals. Having analyzed the situation, he comes to the conclusion that for monsters like him it is necessary to build a more secluded place.",
 		"video_url": "https://nl202.cdnsqu.com/s/FHftUZBtJHeY047BSAZ0I-O0FBQUFBQUFBQUFBUmNlTTJBUG9BOWVJQU9URT0.Utmkfranbk-mzF3Z1gz4HYzrwMcKpJLJDui-vw/hd_30_nl107/Hotel.Transylvania.2012.BDRip.1080p.ENG_480.mp4",

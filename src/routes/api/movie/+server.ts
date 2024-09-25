@@ -3,7 +3,11 @@ import prismadb from '$lib/config/prismadb'
 
 export async function GET() {
 	try {
-		const movies = await prismadb.movie.findMany()
+		const movies = await prismadb.movie.findMany({
+			include: {
+				movieReview: true,
+			}
+		})
 		return json(movies, { status: 200 })
 	} catch (error) {
 		console.log(error)

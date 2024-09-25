@@ -16,7 +16,7 @@ export const routes: Routes = {
 		icon: ''
 	},
 	series: {
-		href: '/series',
+		href: '/serials',
 		label: 'tv shows',
 		icon: ''
 	},

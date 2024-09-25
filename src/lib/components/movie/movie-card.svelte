@@ -4,7 +4,7 @@
 	import { CirclePlay, Clock, Heart } from 'lucide-svelte'
 
 	export let movie: Movie | undefined = undefined
-	export let _class: string = '';
+	export let _class: string = ''
 </script>
 
 {#if !movie}
@@ -17,7 +17,7 @@
 		</div>
 	</div>
 {:else}
-	<div class={"movie-card" + ' ' + _class}>
+	<div class={'movie-card' + ' ' + _class}>
 		<a
 			href="/"
 			class:hover:shadow-white={$configStore?.isDarkMode}
@@ -45,7 +45,7 @@
 				>
 				<div class="flex items-center gap-x-1">
 					<span><Heart class="scale-75 cursor-pointer" /></span>
-					<span>{movie.preferences}</span>
+					<span>{movie.movieReview?.liked || 0}</span>
 				</div>
 			</div>
 			<div class="flex items-center justify-between text-[0.75rem] font-semibold text-white">
@@ -81,11 +81,11 @@
 				}
 			}
 		}
-	  &.section-white {
-		@apply text-white;
-		div {
-          @apply text-white;
+		&.section-white {
+			@apply text-white;
+			div {
+				@apply text-white;
+			}
 		}
-	  }
 	}
 </style>

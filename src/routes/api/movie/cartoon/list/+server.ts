@@ -1,12 +1,17 @@
-import { json } from '@sveltejs/kit'
 import prismadb from '$lib/config/prismadb'
+import { json } from '@sveltejs/kit'
 
-export async function GET() {
+export async function GET({url}) {
 	try {
 		const movies = await prismadb.movie.findMany({
-			orderBy: {
-				imdb: 'desc'
+			where: {
+				type: {
+					equals: 'cartoon'
+				}
 			},
+			orderBy: url.searchParams.get('orderKey')
+				? JSON.parse(url.searchParams.get('orderKey') as string)
+				: { updated_at: 'desc' },
 			select: {
 				id: true,
 				title: true,
@@ -17,6 +22,7 @@ export async function GET() {
 				year: true,
 				quality: true,
 				imdb: true,
+				movieReview: true,
 			},
 			take: 12
 		})

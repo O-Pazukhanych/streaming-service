@@ -1,9 +1,10 @@
 import type { Movie } from '$lib/types/movie'
 
-export interface HomePageProps {
-	movies: MovieLists
-}
-
 export interface MovieLists {
-	suggestions: Movie[]
+	mainBillboard: Movie[]
+	novelties: Movie[]
+	wellRated: Movie[]
+	mostLiked: Movie[]
+	cartoons?: Movie[]
+	serials?: Movie[]
 }

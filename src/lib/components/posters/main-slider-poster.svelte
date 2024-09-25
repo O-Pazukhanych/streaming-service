@@ -40,7 +40,7 @@
 					<div
 						class="mr-1 inline rounded-md border border-white bg-base-content bg-opacity-30 px-2 py-1 font-bold text-white"
 					>
-						<span>{movie.imbd}</span> <span>IMDB</span>
+						<span>{movie.imdb}</span> <span>IMDB</span>
 					</div>
 					<span
 						class="mr-1 rounded-md border border-white bg-base-content bg-opacity-30 px-2 py-1 font-bold text-white"

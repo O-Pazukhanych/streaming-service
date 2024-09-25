@@ -5,7 +5,8 @@
 	import { A11y, Autoplay, Lazy, Navigation } from 'swiper'
 	import { Swiper, SwiperSlide } from 'swiper/svelte'
 	import { ChevronsRight } from 'lucide-svelte'
-	import ButtonMain from '$lib/components/global/buttons/button-main.svelte';
+	import ButtonMain from '$lib/components/global/buttons/button-main.svelte'
+	import NotFoundData from '$lib/components/global/response/not-found-data.svelte'
 
 	export let title: string = ''
 	export let sliderMode: boolean = false
@@ -13,6 +14,7 @@
 	export let _class: string = ''
 	export let _cardClass: string = ''
 	export let showHeader: boolean = true
+	export let loadingData: boolean = true
 </script>
 
 <div class={'movie-list' + ' ' + _class}>
@@ -22,12 +24,12 @@
 		class="mb-4 flex items-center justify-between lg:mb-8"
 	>
 		<h2 class="text-3xl font-bold">{title}</h2>
-		<ButtonMain href='/' type="link" defaultHover={true} _class="uppercase font-semibold" >
+		<ButtonMain href="/" type="link" defaultHover={true} _class="uppercase font-semibold">
 			<span>view all</span>
 			<span slot="icon-after"><ChevronsRight /></span>
 		</ButtonMain>
 	</div>
-	{#if !movieList.length}
+	{#if loadingData}
 		<div
 			class="grid-flow-row grid-cols-3 gap-4 sm:grid md:grid-cols-4 xl:gap-8 2xl:grid-cols-5"
 		>
@@ -35,7 +37,11 @@
 				<MovieCard _class={_cardClass} />
 			{/each}
 		</div>
-	{:else}
+	{/if}
+	{#if !movieList.length && !loadingData}
+		<NotFoundData />
+	{/if}
+	{#if movieList.length && !loadingData}
 		<div
 			class:sm:grid={!sliderMode}
 			class="hidden grid-flow-row grid-cols-3 gap-4 md:grid-cols-4 xl:gap-8 2xl:grid-cols-5"
